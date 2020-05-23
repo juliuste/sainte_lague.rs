@@ -8,6 +8,26 @@ A rust implementation of the **[Sainte-Laguë](https://en.wikipedia.org/wiki/Web
 [![Build Status](https://travis-ci.org/juliuste/sainte_lague.rs.svg?branch=master)](https://travis-ci.org/juliuste/sainte_lague.rs)
 [![License](https://img.shields.io/github/license/juliuste/sainte_lague.rs.svg?style=flat)](license)
 
+## Example
+
+```rust
+use sainte_lague::distribute;
+
+// …
+#[test]
+fn german_bundestag_2013() {
+	let votes = [41.5, 25.7, 8.6, 8.4];
+	let seats = 631;
+
+	let distribution = distribute(&votes, &seats, &false);
+	let parliament = vec![311, 193, 64, 63];
+	assert_eq!(distribution, Ok(parliament));
+}
+// …
+```
+
+**Full documentation on [docs.rs](https://docs.rs/sainte_lague/).**
+
 ## Similar projects
 
 - [`largest-remainder-method`](https://crates.io/crates/largest-remainder-method) - A rust implementation of the Hare-Niemeyer / Hamilton / largest remainder method

@@ -6,9 +6,12 @@ edition = "2018"
 
 description = "Sainte-Laguë method for seat distribution used in multiple parliamentary elections all over the world."
 repository = "https://github.com/juliuste/sainte_lague.rs"
+homepage = "https://github.com/juliuste/sainte_lague.rs"
 readme = "readme.md"
-keywords = ["election", "voting", "sainte lague", "schepers", "webster"]
+keywords = ["election", "voting", "sainte-lague", "schepers", "webster"]
 categories = ["algorithms", "mathematics", "science"]
 license = "ISC"
+exclude = [".travis.yml", ".editorconfig", ".gitignore"]
 
 [dependencies]
+rand = "0.7"
