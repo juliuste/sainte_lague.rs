@@ -1,0 +1,14 @@
+[package]
+name = "sainte_lague"
+version = "0.1.0"
+authors = ["Julius Tens <mail@juliustens.eu>"]
+edition = "2018"
+
+description = "Sainte-Laguë method for seat distribution used in multiple parliamentary elections all over the world."
+repository = "https://github.com/juliuste/sainte_lague.rs"
+readme = "readme.md"
+keywords = ["election", "voting", "sainte lague", "schepers", "webster"]
+categories = ["algorithms", "mathematics", "science"]
+license = "ISC"
+
+[dependencies]
