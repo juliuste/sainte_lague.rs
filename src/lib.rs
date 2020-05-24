@@ -17,7 +17,7 @@ use std::fmt;
 /// Possible error cases of [`distribute`].
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
 pub enum DistributionError {
-    /// A distribution couldn't be determined because multiple parties were tied for the last seat. You can call [`distribute`] to make a draw in these situations to prevent this error case.
+    /// A distribution couldn't be determined because multiple parties were tied for the last seat. You can tell [`distribute`] to make a draw in these situations to prevent this error case.
     Tied,
 
     /// The given seat count was not larger than zero.
