@@ -14,4 +14,4 @@ license = "ISC"
 exclude = [".travis.yml", ".editorconfig", ".gitignore"]
 
 [dependencies]
-rand = "0.8.3"
+rand = "0.8.4"
